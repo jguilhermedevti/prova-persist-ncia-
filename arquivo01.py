@@ -1,7 +1,7 @@
 import pandas as pd
 import random
 
-nomes = ['Pikachu', 'Charizard', 'Bulbasaur', 'Squirtle', 'Mewtwo']
+nomes = ['Pikachu', 'Charmander', 'Moltres', 'Articuno', 'Zapdos']
 total_de_oponentes = len(nomes) - 1
 
 forcas_geradas = [random.randint(50, 150) for _ in range(len(nomes))]
@@ -9,7 +9,6 @@ pokemons = pd.Series(forcas_geradas, index=nomes)
 
 print("Força dos Pokémons")
 print(pokemons)
-
 
 try:
     with open("resultado_pokemons.txt", "w", encoding="utf-8") as arquivo:
